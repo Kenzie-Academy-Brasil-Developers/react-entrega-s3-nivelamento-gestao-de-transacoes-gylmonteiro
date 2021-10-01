@@ -11,7 +11,9 @@ const Flux = () => {
   ]);
 
   const handleAddFruits = (item) => {
-    setTransactions([...transactions, item]);
+    if (item.name && item.quantity && item.price) {
+      setTransactions([...transactions, item]);
+    }
   };
 
   return (
