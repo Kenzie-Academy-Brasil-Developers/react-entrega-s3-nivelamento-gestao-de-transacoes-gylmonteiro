@@ -1,23 +1,24 @@
+import { ContainerCart } from "./styles";
+
 const DisplayCart = ({ transactions }) => {
   const listInputs = transactions.filter((fruit) => fruit.quantity >= 0);
   const listOutputs = transactions.filter((fruit) => fruit.quantity < 0);
 
   return (
-    <div>
+    <ContainerCart>
       <h2>
-        Valor Total = R$
+        <span>Valor Total =</span> R$
         {listInputs.reduce((acc, currentValue) => {
           return acc + currentValue.price;
         }, 0)}
       </h2>
       <h2>
-        {" "}
-        Total de Saídas = R$
+        <span> Total de Saídas =</span> R$
         {listOutputs.reduce((acc, currentValue) => {
           return acc + currentValue.price;
         }, 0)}
       </h2>
-    </div>
+    </ContainerCart>
   );
 };
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { ContainerForm } from "./styles";
 const FormAddFruist = ({ handleAddFruits }) => {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("");
@@ -7,7 +7,7 @@ const FormAddFruist = ({ handleAddFruits }) => {
 
   return (
     <>
-      <div>
+      <ContainerForm>
         <h1>Cadastrar frutas</h1>
         <p>
           Para cadastrar uma entrada, as quantidades deverão ser{" "}
@@ -38,7 +38,7 @@ const FormAddFruist = ({ handleAddFruits }) => {
         <button onClick={() => handleAddFruits({ name, quantity, price })}>
           Cadastrar fruta
         </button>
-      </div>
+      </ContainerForm>
     </>
   );
 };

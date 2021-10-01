@@ -1,9 +1,10 @@
 import Flux from "./Flux";
+import { ContainerGeral } from "./styles";
 function App() {
   return (
-    <div>
+    <ContainerGeral>
       <Flux></Flux>
-    </div>
+    </ContainerGeral>
   );
 }
 
