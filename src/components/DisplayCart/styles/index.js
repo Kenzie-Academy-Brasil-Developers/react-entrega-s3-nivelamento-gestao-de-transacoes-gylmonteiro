@@ -8,6 +8,7 @@ export const ContainerCart = styled.div`
   background-color: black;
   color: yellow;
   border-radius: 20px;
+
   span {
     color: white;
   }

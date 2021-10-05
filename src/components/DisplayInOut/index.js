@@ -15,7 +15,7 @@ const DisplayInOut = ({ transactions }) => {
   };
 
   return (
-    <>
+    <div>
       <h1>Display</h1>
       {flag ? (
         <>
@@ -42,7 +42,7 @@ const DisplayInOut = ({ transactions }) => {
           Nome: {fruit.name}, qtd: {fruit.quantity}, valor: {fruit.price}
         </li>
       ))}
-    </>
+    </div>
   );
 };
 

@@ -9,13 +9,13 @@ const DisplayCart = ({ transactions }) => {
       <h2>
         <span>Valor Total =</span> R$
         {listInputs.reduce((acc, currentValue) => {
-          return acc + currentValue.price;
+          return acc + Number(currentValue.price);
         }, 0)}
       </h2>
       <h2>
         <span> Total de Saídas =</span> R$
         {listOutputs.reduce((acc, currentValue) => {
-          return acc + currentValue.price;
+          return acc + Number(currentValue.price);
         }, 0)}
       </h2>
     </ContainerCart>

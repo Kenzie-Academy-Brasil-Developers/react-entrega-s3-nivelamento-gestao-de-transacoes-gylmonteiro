@@ -1,5 +1,5 @@
-import Flux from "./Flux";
-import { ContainerGeral } from "./styles";
+import Flux from "./components/Flux";
+import { ContainerGeral } from "./components/styles";
 function App() {
   return (
     <ContainerGeral>
